@@ -3,9 +3,13 @@ let point = sessionStorage.getItem("points");
 document.querySelector(".points").innerHTML = point
 
 var passFail = document.getElementById("passFail");
-if(point > 70){
-    passFail.innerHTML = "Wow you are Pass"
+var icon = document.getElementById("icon")
+if(point >= 70){
+    icon.src = "images/trophy-solid.svg"
+    passFail.innerText = "Wow you are Pass"
 }else{
-    passFail.innerHTML = "Sorry you are fail"
+    
+    icon.src = "images/frown-regular.svg"
+    passFail.innerText = "Sorry you are fail"
 }
 

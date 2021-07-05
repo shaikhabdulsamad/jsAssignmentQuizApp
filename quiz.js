@@ -20,6 +20,7 @@ window.onload = function () {
         }
         if (minute == -1) {
             location.href = "end.html"
+           
         }
     }, 1000);
 }
