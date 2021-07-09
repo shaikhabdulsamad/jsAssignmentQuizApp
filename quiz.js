@@ -7,13 +7,13 @@ window.onload = function () {
 
 
     var minute = 1;
-    var sec = 60;
+    var sec = 59;
     setInterval(function () {
         document.getElementById("timer").innerHTML = minute + " : " + sec;
         sec--;
         if (sec == 00) {
             minute--;
-            sec = 60;
+            sec = 59;
             if (minute == 0) {
                 minute = 0;
             }
